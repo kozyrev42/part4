@@ -2,7 +2,7 @@
 
 class Product
 {
-
+    // общие для всёх продуктов свойства
     public $name;
     public $price;
 

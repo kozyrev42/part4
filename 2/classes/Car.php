@@ -9,7 +9,7 @@ class Car
     var $brand;
 
     // since PHP 5.6
-    public $path = __DIR__ . '/test';
+    public $path = __DIR__ ;
     public $test = 1 + 2;
 
 }

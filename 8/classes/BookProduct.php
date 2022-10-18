@@ -8,6 +8,7 @@ class BookProduct extends Product
 
     public function __construct($name, $price, $numPages)
     {
+        // передача параметров в Родительский Класс, то есть в 'Product'
         parent::__construct($name, $price);
         $this->numPages = $numPages;
     }

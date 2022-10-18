@@ -2,26 +2,30 @@
 error_reporting(-1);
 require_once 'classes/Car.php';
 
+// функция для вывода данных
 function debug($data){
     echo '<pre>' . print_r($data,1) . '</pre>';
 }
 
+// создание объектов
 $car1 = new Car();
 $car2 = new Car();
-debug($car1);
+//debug($car1);
 
+// переоределение свойств объекта $car1
 $car1->color = 'черный';
 $car1->brand = 'volvo';
 $car1->year = 2018;
 $car1->colour = 'красный';
 
+// переопределение свойств объекта $car2
 $car2->color = 'белый';
 $car2->brand = 'bmw';
 $car2->speed = 200;
 $car2->year = 2017;
 
-//debug($car1);
-//debug($car2);
+debug($car1);
+debug($car2);
 
 echo "<h3>О моем авто:</h3>
 Марка: {$car1->brand}<br>

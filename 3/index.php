@@ -14,5 +14,11 @@ $car2 = new Car();
 $car2->color = 'черный';
 $car2->brand = 'bmw';
 
+$car3 = new Car();
+$car3->color = 'баклажан';
+$car3->brand = 'лада';
+
+// вызов метода класса
 echo $car1->getCarInfo();
 echo $car2->getCarInfo();
+echo $car3->getCarInfo();
