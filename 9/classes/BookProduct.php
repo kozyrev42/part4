@@ -5,6 +5,7 @@ class BookProduct extends Product
 {
 
     public $numPages;
+    //protected $protected = 'PROTECTED';
 
     public function __construct($name, $price, $numPages)
     {

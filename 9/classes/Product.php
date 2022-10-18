@@ -8,9 +8,9 @@ class Product
 
     private $discount = 0;
 
-//    public $public = 'PUBLIC';
-//    protected $protected = 'PROTECTED';
-//    private $private = 'PRIVATE';
+    //public $public = 'PUBLIC';
+    //protected $protected = 'PROTECTED';
+    //private $private = 'PRIVATE';
 
     public function __construct($name, $price)
     {
