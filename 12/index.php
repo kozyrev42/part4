@@ -5,20 +5,20 @@ use classes\interfaces\IGadget;
 use classes\NotebookProduct;
 
 error_reporting(-1);
-/*require_once 'classes/Product.php';
-require_once 'classes/I3D.php';
-require_once 'classes/IGadget.php';
+require_once 'classes/Product.php';
+require_once 'classes/interfaces/I3D.php';
+require_once 'classes/interfaces/IGadget.php';
 require_once 'classes/NotebookProduct.php';
-require_once 'classes/BookProduct.php';*/
+require_once 'classes/BookProduct.php';
 
-function autoloder1($class)
-{
-    $class = str_replace("\\", '/', $class);
-    $file = __DIR__ . "/{$class}.php";
-    if(file_exists($file)){
-        require_once $file;
-    }
-}
+//function autoloder1($class)
+//{
+//    $class = str_replace("\\", '/', $class);
+//    $file = __DIR__ . "/{$class}.php";
+//    if(file_exists($file)){
+//        require_once $file;
+//    }
+//}
 
 /*function autoloder2($class)
 {
@@ -27,7 +27,7 @@ function autoloder1($class)
         require_once $file;
     }
 }*/
-spl_autoload_register('autoloder1');
+//spl_autoload_register('autoloder1');
 //spl_autoload_register('autoloder2');
 
 function debug($data){
